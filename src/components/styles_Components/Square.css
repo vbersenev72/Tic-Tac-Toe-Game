@@ -1,0 +1,18 @@
+.game_square {
+    border: 0,7mm solid black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 10px;
+
+}
+
+.game_square:hover {
+    background: gray
+}
