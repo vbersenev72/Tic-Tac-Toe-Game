@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Board from './Board';
 import "./styles_Components/Game.css"
-import { calculateWinner } from '../helper';
+import calculateWinner from '../helper';
 
 import { useState } from 'react';
 
@@ -20,10 +20,13 @@ export default function Game (props: IGameProps) {
 
   const clickSquare = (index: number) => {
 
-    const boardCopy = [...board]
+    const boardCopy = board
 
     // определить был ли клик по ячейке или игра окончена
-    if(winner || boardCopy[index]) return null
+    if(winner || boardCopy[index]){
+      return null
+    }
+
 
     // определить чей ход. X или O
     boardCopy[index] = xIsNext ? "X" : "O"
