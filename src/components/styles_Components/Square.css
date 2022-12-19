@@ -1,5 +1,5 @@
 .game_square {
-    border: 0,7mm solid black;
+    border: 0.7 solid black;
     width: 100px;
     height: 100px;
     cursor: pointer;
